@@ -1,1 +1,93 @@
-ni aata
+Without the usage of SafeArea
+
+main.dart
+
+import 'package:flutter/material.dart';
+void main() {
+runApp(MaterialApp(
+home: Text(
+'Without SafeArea', textAlign: TextAlign.center,
+style: TextStyle(
+fontSize: 40, fontWeight: FontWeight.w800,
+color: Colors.deepOrangeAccent,
+),
+),
+));
+}
+________________________________________________________________
+
+Without the usage of SafeArea
+
+Main.dart
+
+import 'package:flutter/material.dart';
+void main() {
+runApp(MaterialApp(
+home: SafeArea(
+child: Text(
+'Without SafeArea', textAlign: TextAlign.center,
+style: TextStyle(
+fontSize: 40, fontWeight: FontWeight.w800,
+color: Colors.deepOrangeAccent,
+),
+),
+),
+));
+}
+
+
+
+_______________________________________________________________________
+
+
+Main.dart
+
+
+import 'package:flutter/material.dart';
+void main() {
+runApp(
+MaterialApp(
+home: Scaffold(
+appBar: AppBar(
+title: Text("First Flutter App")
+),
+body: Center(
+child: Text(
+'This is first App', style: TextStyle(
+fontSize: 40.0, fontStyle: FontStyle.italic,
+fontWeight: FontWeight.bold,
+),
+),
+),
+),
+));
+}
+
+_________________________________________________________________________________
+
+
+Scaold and SafeArea in action
+
+Main.dart
+
+
+import 'package:flutter/material.dart';
+void main() {
+runApp(
+MaterialApp(
+home: Scaffold(
+appBar: AppBar(
+title: Text(
+'Scaffold SafeArea' ),
+),
+body: Container(
+child: SafeArea(
+child: Center(
+child: Text(
+'This is sample Text' ),
+),
+),
+),
+),
+));
+}
